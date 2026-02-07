@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build the Package'
+            }
+        }
+
+        stage('QA') {
+            steps {
+                echo 'QA Testing Completed'
+            }
+        }
+
+        stage('PROD') {
+            steps {
+                echo 'Deploy to Prod'
+            }
+        }
+
+
+    }
+}
